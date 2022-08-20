@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/logobin.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Convert Key</title>
+</head>
+<body>
+    <main>
+        <div id="select">
+            <select name="select1" class="select-item" id="select1">
+                <option value="Dec">Thập phân</option>
+                <option value="Bin">Nhị phân</option>
+                <option value="Oct">Bát phân</option>
+                <option value="Hex">Thập lục phân</option>
+            </select>
+            <i class="fa-solid fa-arrows-rotate" id="rotate" style="font-size: 30px; color: white;margin: 10px 0px;"></i>
+            <select name="select2" class="select-item" id="select2">
+                <option value="Bin">Nhị phân</option>
+                <option value="Dec">Thập phân</option>
+                <option value="Oct">Bát phân</option>
+                <option value="Hex">Thập lục phân</option>
+            </select>
+        </div>
+        <input type="number" id="input">
+        <div id="father-button">
+            <button id="again">Nhập lại</button>
+            <button type="submit" id="submit">Chuyển</button>
+        </div>
+    </main>
+    <span id="show"></span>
+    <span id="message" style="visibility: hidden;">Chỉ được nhập 1 và 0 </span>
+</body>
+    <script src="./app.js"></script>
+</html>

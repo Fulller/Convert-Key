@@ -35,7 +35,7 @@ main{
 #icon_down{
     display: none;
 }
-#input{
+.input{
     font-size: 22px;
     border: none;
     outline: none;
@@ -45,11 +45,12 @@ main{
     color: blue;
     font-weight: 600;
     margin-top: 12px;
+    width: 100%;
 }
-#father-button{
+.father-button{
     display: flex;
 }
-#submit{
+.submit{
     margin: auto;
     margin-top: 12px;
     padding: 8px;
@@ -61,7 +62,7 @@ main{
     background-color: blue;
     margin-left: 6px;
 }
-#again{
+.again{
     margin: auto;
     margin-top: 12px;
     padding: 8px;
@@ -73,7 +74,7 @@ main{
     margin-right: 6px;
     background-color: rgba(245, 143, 125, 0.701);
 }
-#show{
+.show{
     display: block;
     text-align: center;
     margin-top: 72px;
@@ -91,6 +92,37 @@ main{
     font-size: 30px;
     color: white;
     font-weight: 600;
+}
+menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.menu-item{
+    width: 50%;
+    padding: 8px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.285);
+    border: none;
+    outline: none;
+}
+.menu-item-active{
+    font-weight: 600;
+    color: white;
+    border-bottom: 3px solid white;
+}
+#total{
+    display: none;
+}
+#total-select-father{
+    display: flex;
+    flex-direction: column;
+}
+#total-select{
+    margin: auto;
+    margin-top: 10px;
+    width: 100px;
 }
 @media screen and (max-width: 500px) {
     main{

@@ -9,30 +9,52 @@
     <title>Convert Key</title>
 </head>
 <body>
+    <menu>
+        <button class="menu-item menu-item-active" id="menu-convert">Chuyển đổi hệ số</button>
+        <button class="menu-item" id="menu-total">Phép tính nhị phân</button>
+    </menu>
     <main>
-        <div id="select">
-            <select name="select1" class="select-item" id="select1">
-                <option value="Dec">Thập phân</option>
-                <option value="Bin">Nhị phân</option>
-                <option value="Oct">Bát phân</option>
-                <option value="Hex">Thập lục phân</option>
-            </select>
-            <i class="fa-solid fa-arrows-rotate" id="rotate" style="font-size: 30px; color: white;margin: 10px 0px;"></i>
-            <select name="select2" class="select-item" id="select2">
-                <option value="Bin">Nhị phân</option>
-                <option value="Dec">Thập phân</option>
-                <option value="Oct">Bát phân</option>
-                <option value="Hex">Thập lục phân</option>
-            </select>
+        <div id="convert">
+            <div id="select">
+                <select name="select1" class="select-item" id="select1">
+                    <option value="Dec">Thập phân</option>
+                    <option value="Bin">Nhị phân</option>
+                    <option value="Oct">Bát phân</option>
+                    <option value="Hex">Thập lục phân</option>
+                </select>
+                <i class="fa-solid fa-arrows-rotate" id="rotate" style="font-size: 30px; color: white;margin: 10px 0px;"></i>
+                <select name="select2" class="select-item" id="select2">
+                    <option value="Bin">Nhị phân</option>
+                    <option value="Dec">Thập phân</option>
+                    <option value="Oct">Bát phân</option>
+                    <option value="Hex">Thập lục phân</option>
+                </select>
+            </div>
+            <input type="number" id="input" class="input">
+            <div class="father-button">
+                <button id="again" class="again">Nhập lại</button>
+                <button type="submit" class="submit" id="submit">Chuyển</button>
+            </div>
+            <span id="show" class="show"></span>
         </div>
-        <input type="number" id="input">
-        <div id="father-button">
-            <button id="again">Nhập lại</button>
-            <button type="submit" id="submit">Chuyển</button>
+        <div id="total">
+            <div id="total-select-father">
+                <input type="number" id="total-input1"  class="input">
+                <select id="total-select" class="select-item">
+                    <option value="plus">cộng</option>
+                    <option value="minus">trừ</option>
+                    <option value="multiply">nhân</option>
+                    <option value="divide">chia</option>
+                </select>
+                <input type="number" id="total-input2" class="input">
+            </div>
+            <div class="father-button">
+                <button id="total-again" class="again">Nhập lại</button>
+                <button type="submit" class="submit" id="total-submit">=</button>
+            </div>
+            <span id="total-show" class="show"></span>
         </div>
     </main>
-    <span id="show"></span>
-    <span id="message" style="visibility: hidden;">Chỉ được nhập 1 và 0 </span>
 </body>
     <script src="./app.js"></script>
 </html>

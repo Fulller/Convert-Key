@@ -120,6 +120,9 @@ menu{
     display: flex;
     flex-direction: column;
 }
+#total-input1{
+    margin-top: 0;
+}
 #total-select{
     margin: auto;
     margin-top: 10px;

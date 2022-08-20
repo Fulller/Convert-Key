@@ -189,7 +189,6 @@ let app = {
             input.focus()
         }
         submit.onclick = function (){
-            input.focus()
             app.mode = `${select1.value}to${select2.value}`
             if(app.handle[app.mode]){
                 app.result = 0

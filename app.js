@@ -316,7 +316,6 @@ let control = {
             control.element.convert.style.display = 'none'
             control.element.total.style.display = 'block'
         }
-        control.element.menuTotal.click()
     }
 }
 control.handleEvent()
